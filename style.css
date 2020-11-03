@@ -43,7 +43,8 @@ li{
 }
 
 .section{
-    padding: 5rem 0 7rem 0;
+    padding: 5rem 0;
+    color: #000;
 }
 
 .title{
@@ -119,7 +120,9 @@ li{
 }
 
 
+
 /* HERO */
+
 .hero{
     position: relative;
     height: 100%;
@@ -155,9 +158,9 @@ li{
   color: #000;
 }
 
+
+
 /* ABOUT ---------------------------------------------------------------------------- */
-
-
 
 
 .about{
@@ -203,6 +206,52 @@ font-size: 4rem;
         height: 40rem;
         object-fit: cover;
     }
+
+
+    /* MENU SECTION */
+
+    .menu-center{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .menu-box{
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 1.6rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+    }
+
+    .menu-box img{
+        height: 30rem;
+        object-fit: cover;
+    }
+
+    .menu-box p{
+        padding: 1.6rem 0;
+        font-size: 1.8rem;
+    }
+
+
+    /* CHEFS */
+
+    .chefs{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 3rem;
+    }
+
+    .chef img{
+        height: 30rem;
+        object-fit: cover;
+    }
+
+    /* TESTIMONIAL */
+
+    
+
 
 
 

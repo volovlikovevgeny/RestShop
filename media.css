@@ -19,9 +19,18 @@
         display: flex;
         flex-direction: column-reverse;
     }
+}
 
+@media(max-width:996px){
+    .menu-center{
+        grid-template-columns: repeat(2, 1fr);
     }
-    
+
+    .chefs{
+        grid-template-columns: repeat(3,1fr);        
+    }
+
+}
 
 
 @media(max-width:768px){
@@ -80,7 +89,9 @@
   }
 
   .nav-link:hover{
-    color: #000;
+    color: #fff;
+    background-color: #000;
+    text-decoration: underline;
   }
 
   .hero .content h1{
@@ -97,6 +108,11 @@
 .about .right img {
     width: 100%;  
  }
+
+ .chefs{
+    grid-template-columns: repeat(2,1fr);        
+  }
+
 }
 
 
@@ -104,6 +120,14 @@
     .about .right img {
         width: 50rem;  
      }
+
+     .menu-center{
+        grid-template-columns:1fr;
+    }
+
+    .chefs{
+        grid-template-columns:1fr;        
+    }
 }
 
 
