@@ -136,6 +136,11 @@
       margin: 0 auto;
   }
 
+
+  .img-cover iframe{
+    width: auto;
+  }
+
 }
 
 
