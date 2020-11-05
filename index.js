@@ -3,7 +3,7 @@ const navOpen = document.querySelector('.hamburger');
 const navClose = document.querySelector('.close');
 
 const navLeft = menu.getBoundingClientRect().left;
-const navRight = menu.getBoundingClientRect().right;
+
 
 
 navOpen.addEventListener('click', () => {

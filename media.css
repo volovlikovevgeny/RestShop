@@ -30,6 +30,10 @@
         grid-template-columns: repeat(3,1fr);        
     }
 
+    .testimonial-center{
+        grid-template-columns: repeat(2,1fr);
+    }
+
 }
 
 
@@ -127,6 +131,10 @@
 
     .chefs{
         grid-template-columns:1fr;        
+    }
+
+    .testimonial-center{
+        grid-template-columns:1fr;
     }
 }
 

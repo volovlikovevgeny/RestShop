@@ -250,7 +250,64 @@ font-size: 4rem;
 
     /* TESTIMONIAL */
 
-    
+    .testimonial{
+        position: relative;
+        background: url('https://raw.githubusercontent.com/ziddahedem/restaurant-website/master/images/pic6.jpg') center/cover no-repeat fixed ;
+        }
+
+        .testimonial::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: -1;
+        }
+
+        .testimonial-center{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 3rem;
+        }
+
+        .test-box{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 3rem 1.6rem;
+            text-align: center;
+        }
+
+        .test-box .img-cover{
+            height: 10rem;
+            width: 10rem;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-bottom: 1.6rem;
+        }
+
+        .test-box .img-cover img{
+            object-fit: cover;
+            height:100%;
+        }
+
+        .test-box p{
+            font-style: italic;
+            color: #666;
+            width: 90%;
+            margin-bottom: 1.6rem;
+        }
+
+        .test-box span{
+            color: aquamarine;
+        }
+
+
+
+
 
 
 
