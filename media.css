@@ -34,6 +34,11 @@
         grid-template-columns: repeat(2,1fr);
     }
 
+    .contact-center{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
 }
 
 
@@ -90,6 +95,7 @@
       font-size: 3rem;
       padding: 1rem 0;
       color: #fff;
+      z-index: 100;
   }
 
   .nav-link:hover{
@@ -115,6 +121,19 @@
 
  .chefs{
     grid-template-columns: repeat(2,1fr);        
+  }
+
+  .contact-center{
+      grid-template-columns: 1fr;
+  }
+
+  .form{
+      margin: 0 auto;
+  }
+
+  .contact-center .img-cover{
+      max-width: 40rem;
+      margin: 0 auto;
   }
 
 }

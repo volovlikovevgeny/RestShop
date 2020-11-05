@@ -75,6 +75,31 @@ li{
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+ .fix-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1;
+}
+
+.fix-nav .nav-link:link,
+.fix-nav .nav-link:visited{
+    color: #222;
+}
+
+.fix-nav .logo h1{
+    color: #222;
+}
+
+.fix-nav .hamburger{
+    color: #222;
+}
+
+
+
 /* NAV */
 
 .navigation{
@@ -252,7 +277,7 @@ font-size: 4rem;
 
     .testimonial{
         position: relative;
-        background: url('https://raw.githubusercontent.com/ziddahedem/restaurant-website/master/images/pic6.jpg') center/cover no-repeat fixed ;
+        background: url('https://i.ibb.co/vP0qrnD/testimonial-bg.jpg') center/cover no-repeat fixed ;
         }
 
         .testimonial::after{
@@ -304,6 +329,64 @@ font-size: 4rem;
         .test-box span{
             color: aquamarine;
         }
+
+        .contact-center{
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 3rem;
+        }
+
+        .form{
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 6rem 4rem;
+            border-radius: 0.5rem;
+            max-width: 40rem;
+        }
+
+        .form h2{
+            font-size: 2rem;
+            margin-bottom: 1.6rem;
+        }
+
+        .form input,
+        .form textarea{
+            font-family: "Poppins",sans-serif;
+            display: block;
+            width: 100%;
+            text-indent: 1rem;
+            border: 1px solid #999;
+            padding: 1rem 0;
+            margin-bottom: 1.6rem;
+        }
+
+        .form textarea{
+            height: 10rem;
+            max-width: 32rem;
+        }
+
+        .form input:focus,
+        .form textarea:focus{
+            outline: none;
+        }
+
+        .form a {
+            display: inline-block;
+            padding: .7rem 2.5rem;
+            background-color: royalblue;
+            color: #fff;
+        }
+
+        .footer {
+           text-align: center;
+           padding: 1.6rem 0;
+           color: black;
+        }
+
+        .footer span{
+            color: royalblue;
+        }
+
+        
 
 
 
