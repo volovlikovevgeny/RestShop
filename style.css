@@ -17,6 +17,7 @@ body{
     font-weight: 400;
     background-color: #fff;
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 
@@ -144,6 +145,8 @@ li{
     display: none;
 }
 
+/*  */
+
 
 
 /* HERO */
@@ -157,10 +160,11 @@ li{
 
 .hero .content{
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 70%;
+    width: 90%;
+    height: 90%;
 }
 
 .hero h1{
@@ -182,6 +186,52 @@ li{
   background-color: #fff;
   color: #000;
 }
+
+/* SLIDER */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+  
+  }
+
+    
+  .swiper-wrapper{
+    height:100%;
+    width: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+
+
+
+
 
 
 

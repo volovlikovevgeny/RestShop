@@ -25,22 +25,9 @@ const navHeight = nav.getBoundingClientRect().height;
 window.addEventListener('scroll', () => {
     const scrollHeight = window.pageYOffset;
 
-    scrollHeight > navHeight ? nav.classList.add('fix-nav') : nav.classList.remove('fix-nav')
+    scrollHeight > navHeight ? nav.classList.add('fix-nav') : nav.classList.remove('fix-nav');
 })
 
-
-// Smooth-Scrolling Jquery
-
-$(document).ready(function () {
-    $('a[href^="#"]').click(function () {
-        //Сохраняем значение атрибута href в переменной:
-        var target = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(target).offset().top//можно вычесть высоту меню
-        }, 800);
-        return false;
-    });
-});
 
 // ScroolTo
 
@@ -57,8 +44,15 @@ links.map(link => {
 AOS.init()
 
 
+// SLIDER
 
-
-
-
-
+var swiper = new Swiper('.swiper-container', {
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
